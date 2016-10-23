@@ -1,0 +1,5 @@
+name: AFCore
+main: AFantasyCore\AFCore
+version: 1.0.1
+author: NeuroBinds
+api: [2.0.0]
