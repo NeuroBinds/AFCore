@@ -1,6 +1,6 @@
 <?php
 
-namespace AFantasyCore\AFCore;
+namespace AFantasyCore;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\listener;
@@ -21,14 +21,13 @@ use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\event\level\LevelLoadEvent;
 use pocketmine\level\Position;
 use pocketmine\level\Level;
-use pocketmine\Player;
 use pocketmine\entity\Entity;
 use pocketmine\math\Vector3;
 
 class AFCore extends PluginBase implements Listener{
 
 public function onEnable(){
-	PluginManager()->registerEvents($this, $this);
+	$this->getServer()->getPluginManager()->registerEvents($this, $this);
 }
 
     public function onVoidLoop(PlayerMoveEvent $event){//Credit For rirititi taken from NoVoid And Remodded By Me LOL
